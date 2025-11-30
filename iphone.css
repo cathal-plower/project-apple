@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ac9898;
+    color: #111;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 100vh;    
+    background-color: #f1e7e7;
+    padding-top: 40px;
+    z-index: 10;
+    display: flex;
+    justify-content: start;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 260px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* ===== INFO BLOCKS ===== */
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.info-block img {
+    width: 240px;
+    border-radius: 12px;
+}
+
+.text-box {
+    max-width: 600px;
+}
+
+.left-img {
+    flex-direction: row;
+}
