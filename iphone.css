@@ -1,20 +1,55 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #ac9898;
+    background: #fefefe;
     color: #111;
 }
-nav {
+.side-nav {
     position: fixed;
-    top: 0;
     right: 0;
+    top: 0;
+    height: 100vh;
     width: 180px;
-    height: 100vh;    
-    background-color: #f1e7e7;
-    padding-top: 40px;
-    z-index: 10;
+    background: black;
+    padding: 20px 15px;
+    box-shadow: -2px 0 5px rgba(180, 169, 169, 0.4);
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 2px solid #222;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.side-nav li {
+    margin: 0;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 14px;
+    display: block;
+    background: #111; 
+    border-radius: 8px;
+    transition: 0.25s;
+    border: 1px solid #222;
+}
+
+.side-nav a:hover {
+    background: #423f3f;
+    color: white;
+    border-color: #444;
+    transform: translateX(-4px);
 }
 
 main {
@@ -23,18 +58,17 @@ main {
     padding: 20px;
 }
 
-.hero {
+.upper {
     text-align: center;
     padding: 60px 20px;
 }
 
-.hero img {
+.upper img {
     width: 260px;
     margin-top: 20px;
     border-radius: 12px;
 }
 
-/* ===== INFO BLOCKS ===== */
 .info-block {
     display: flex;
     align-items: center;
@@ -53,4 +87,25 @@ main {
 
 .left-img {
     flex-direction: row;
+}
+.toggle-btn {
+    width: 100%;
+    padding: 10px 15px;
+    background: #161616;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #555;
+}
+
+.toggle-content {
+    display: none;
+    animation: fade .3s ease-in-out;
 }

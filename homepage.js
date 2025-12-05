@@ -1,11 +1,26 @@
-document.getElementById("loginBtn").addEventListener("click", () => {
-    const name = document.getElementById("userName").value;
-    const email = document.getElementById("userEmail").value;
+const loginBtn = document.getElementById("loginBtn");
+const loginForm = document.getElementById("loginForm");
+const fullName = document.getElementById("fullName");
 
-    if (name === "" || email === "") {
-        alert("Please enter your name and email");
+let formVisible = false;
+
+loginBtn.addEventListener("click", () => {
+    if (!formVisible) {
+        loginForm.style.display = "block";
+        formVisible = true;
+        return;
+    }
+
+    const name = fullName.value.trim();
+
+    if (name === "") {
+        alert("Please enter your full name before logging in.");
         return;
     }
 
     alert("Welcome, " + name + "!");
+
+    loginForm.style.display = "none";
+    formVisible = false;
+    fullName.value = "";
 });

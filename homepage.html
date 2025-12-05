@@ -12,17 +12,7 @@
         <img src="images/logo.png" alt="Image not Found">
     </header>
 
-<div class="login-box">
-    <h2>Login</h2>
 
-    <label>Name:</label>
-    <input type="text" id="userName">
-
-    <label>Email:</label>
-    <input type="email" id="userEmail">
-
-    <button id="loginBtn">Login</button>
-</div>
     
     <section class="products">
         <div class="product-card">
@@ -41,9 +31,17 @@
         </div>
     </section>
 
+    <div id="loginContainer">
+    <button id="loginBtn">Login</button>
+
+    <div id="loginForm" style="display: none;">
+        <input type="text" id="fullName" placeholder="Enter your full name">
+    </div>
+</div>
+
     <footer>
         © 2025 ATU
     </footer>
-<script href="homepage.js"></script>
+<script src="homepage.js"></script>
 </body>
 </html>
