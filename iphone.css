@@ -42,7 +42,7 @@ body {
     background: #111; 
     border-radius: 8px;
     transition: 0.25s;
-    border: 1px solid #222;
+    border: 1px solid #ad9f9f;
 }
 
 .side-nav a:hover {
@@ -78,7 +78,7 @@ main {
 
 .info-block img {
     width: 240px;
-    border-radius: 12px;
+    border-radius: 17px;
 }
 
 .text-box {
@@ -103,6 +103,7 @@ main {
 
 .toggle-btn:hover {
     background: #555;
+    transform: translateY(-5px);
 }
 
 .toggle-content {
