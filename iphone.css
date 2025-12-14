@@ -4,6 +4,7 @@ body {
     background: #fefefe;
     color: #111;
 }
+/*This sets the default font, background color, text color, and removes the page margins*/
 .side-nav {
     position: fixed;
     right: 0;
@@ -18,7 +19,7 @@ body {
     justify-content: flex-start;
     border-left: 2px solid #222;
 }
-
+/*This creates a fixed vertical navigation menu on the right side of the screen*/
 .side-nav ul {
     list-style: none;
     padding: 0;
@@ -27,7 +28,7 @@ body {
     flex-direction: column;
     gap: 18px;
 }
-
+/*This removes list styling and arranges the navigation items vertically with spacing*/
 .side-nav a {
     text-decoration: none;
     color: #dcdcdc;
@@ -40,50 +41,52 @@ body {
     transition: 0.25s;
     border: 1px solid #ad9f9f;
 }
-
+/*This styles the navigation links with padding, colors, rounded corners, and a smooth transition*/
 .side-nav a:hover {
     background: #423f3f;
     color: white;
     border-color: #444;
     transform: translateX(-4px);
 }
-
+/*This changes the link color, background, and position when the user hovers over it*/
 main {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
-
+/*This centers the main content and limits its maximum width*/
 .upper {
     text-align: center;
     padding: 60px 20px;
 }
-
+/*This centers the top section content and adds vertical spacing*/
 .upper img {
     width: 260px;
     margin-top: 20px;
     border-radius: 12px;
 }
-
+/*This controls the size and rounded corners of the image in the upper section*/
 .info-block {
     display: flex;
     align-items: center;
     gap: 40px;
     padding: 50px 0;
 }
-
+/*This aligns an image and text side by side using flexbox*/
 .info-block img {
     width: 240px;
     border-radius: 17px;
 }
-
+/*This sets the size and rounded corners of images inside the info block*/
 .text-box {
     max-width: 600px;
+    
 }
-
+/*This limits the width of the text so it is easier to read*/
 .left-img {
     flex-direction: row;
 }
+/*This ensures the content layout stays in a left-to-right direction*/
 .toggle-btn {
     width: 100%;
     padding: 10px 15px;
@@ -96,13 +99,13 @@ main {
     margin-bottom: 10px;
     transition: 0.3s;
 }
-
+/*This styles the toggle button, making it large, clickable, and animated*/
 .toggle-btn:hover {
     background: #555;
     transform: translateY(-5px);
 }
-
+/*This changes the button color and moves it slightly when hovered*/
 .toggle-content {
     display: none;
-    animation: fade .3s ease-in-out;
 }
+/*This hides the content by default*/

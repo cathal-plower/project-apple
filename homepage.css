@@ -1,10 +1,10 @@
 body {
-    margin: 0;
+    margin: 0; 
     font-family: Arial, sans-serif;
     background: rgb(255, 255, 255);
     color: black;
 }
-
+/*This sets the default font, background color, text color, and removes the page margins.*/
 header {
     text-align: center;
     padding: 20px 0;
@@ -12,18 +12,18 @@ header {
     font-weight: bold;
     letter-spacing: 15px;
 }
-
+/*This centers the header text and makes it large, bold, and spaced out.*/ 
 .products {
     display: flex;
     justify-content: center;
     gap: 60px;
     padding: 40px;
 }
-
+/*This arranges the products in a horizontal row with space between them.*/
 .product-card {
     text-align: center;
 }
-
+/*This centers the content inside each product card.*/
 .img-placeholder {
     width: 160px;
     height: 200px;
@@ -31,7 +31,7 @@ header {
     border-radius: 12px;
     margin-bottom: 10px;
 }
-
+/*This creates a gray box used as a placeholder for images.*/
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -42,11 +42,11 @@ header {
     font-weight: bold;
     transition: 0.6s;
 }
-
+/*This changes the appearance of buttons, giving them padding, color, rounded edges, and a smooth transition.*/
 .btn:hover {
     background: #646363;
 }
-
+/*This changes the button color when the mouse is over it.*/
 footer {
     margin-top: 500px;
     text-align: center;
@@ -54,12 +54,14 @@ footer {
     font-size: 0.9rem;
     background: #f0f0f0;
 }
+/*This styles the footer by adding space above it, centering the text, and giving it a light background.*/
 .product-card img{
     width: 90%;
     background: #e5e5e5;
     border-radius: 12px;
     margin-bottom: 10px;
 }
+/*This resizes the product images and gives them rounded corners.*/
 .login-box {
     width: 250px;
     padding: 15px;
@@ -73,25 +75,25 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
-
+/*This styles the login box with a blurred background, rounded edges, and vertical layout.*/
 .login-box input {
     padding: 5px 8px;
     border-radius: 5px;
     border: none;
     outline: none;
 }
-
+/*This styles the input fields inside the login box to look clean and simple.*/
 .login-box button {
     padding: 8px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-
+/*This styles the button inside the login box to be clickable and rounded.*/
 #loginContainer {
     margin: 20px;
 }
-
+/*This adds space around the login area.*/
 #loginBtn {
     padding: 10px 20px;
     font-size: 1rem;
@@ -101,19 +103,20 @@ footer {
     border-radius: 8px;
     cursor: pointer;
 }
-
+/*This styles the login button with custom size, colors, and rounded corners.*/
 #loginBtn:hover {
     background: #333;
 }
-
+/*This changes the login button color when the user hovers over it.*/
 #loginForm {
     margin-top: 10px;
 }
-
+/*This adds spacing above the login form.*/
 #loginForm input {
     padding: 8px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-radius: 6px;
     border: 1px solid #ccc;
     width: 200px;
 }
+/*This styles the input fields inside the login form to be larger and easier to use.*/
